@@ -17,7 +17,9 @@ It ships as a searchable GTK 4 desktop app and a command-line tool with JSON out
 >
 > **Scope:** WhatApp inventories **desktop launchers** (`.desktop` files), not every installed package or binary on the computer.
 
-<!-- Screenshot: docs/screenshot.png -->
+![WhatApp GUI showing three launchers named Claude, with the inspector open on one of them](docs/whatapp_gui.png)
+
+![whatapp claude in a terminal: three matches, each with launcher path, Exec, resolved executable and dpkg owners](docs/whatapp_cli.png)
 
 ## Why WhatApp?
 
