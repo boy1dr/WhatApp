@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "whatapp"
+version = "0.1.0"
+description = "Read-only Linux desktop launcher inspector: CLI, JSON output and a GTK 4 browser"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "boy1dr" }]
+requires-python = ">=3.12"
+# The GUI needs PyGObject with GTK 4 bindings. These are supplied by the
+# distribution (python3-gi, gir1.2-gtk-4.0 on Ubuntu) and used through a
+# --system-site-packages environment; they are deliberately not PyPI dependencies.
+dependencies = []
+keywords = ["linux", "desktop", "xdg", "launcher", "desktop-entry", "dpkg", "gtk4"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: X11 Applications :: GTK",
+    "Environment :: Console",
+    "Intended Audience :: End Users/Desktop",
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Desktop Environment",
+    "Topic :: System :: Systems Administration",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://github.com/boy1dr/WhatApp"
+Repository = "https://github.com/boy1dr/WhatApp"
+Issues = "https://github.com/boy1dr/WhatApp/issues"
+Changelog = "https://github.com/boy1dr/WhatApp/blob/main/CHANGELOG.md"
+
+[project.scripts]
+whatapp = "whatapp.cli:entry"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.uv]
+# The GTK bindings only exist in the distribution's Python, so uv must never
+# substitute a downloaded interpreter. Machine-specific settings (offline mode,
+# cache location, build isolation) live in scripts/setup-dev.sh instead.
+python-preference = "only-system"
+python-downloads = "never"

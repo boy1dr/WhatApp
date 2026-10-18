@@ -1,0 +1,4 @@
+[Desktop Entry]
+Type=Application
+Name=Wine Control Panel
+Exec=env WINEPREFIX=/home/example/.wine-claude wine control.exe

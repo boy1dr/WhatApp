@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=Sample Restricted
+OnlyShowIn=GNOME;Unity;
+NotShowIn=KDE;
+DBusActivatable=true

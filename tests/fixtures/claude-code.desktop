@@ -1,0 +1,5 @@
+[Desktop Entry]
+Type=Application
+Name=Claude Code URL Handler
+Exec=claude-code --open-url %U
+NoDisplay=true

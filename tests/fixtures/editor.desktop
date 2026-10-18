@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Sample Editor
+Name[fr]=Éditeur
+Exec=sample-editor --open %U
+Icon=sample-editor
+
+[Desktop Action New]
+Name=New Window
+Exec=wrong-command

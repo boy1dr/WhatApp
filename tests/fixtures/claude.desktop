@@ -1,0 +1,4 @@
+[Desktop Entry]
+Type=Application
+Name=Claude
+Exec=env WINEPREFIX=/home/example/.wine-claude wine Claude.exe

@@ -1,0 +1,4 @@
+[Desktop Entry]
+Type=Application
+Name=Claude Desktop
+Exec=/opt/claude/claude %U

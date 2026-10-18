@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=Sample Hidden
+Hidden=true
+NoDisplay=true
+DBusActivatable=true

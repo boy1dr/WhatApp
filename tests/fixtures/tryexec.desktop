@@ -1,0 +1,5 @@
+[Desktop Entry]
+Type=Application
+Name=Sample TryExec
+TryExec=sample-probe
+DBusActivatable=true

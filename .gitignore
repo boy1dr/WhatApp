@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# uv / virtual environments (the dev env is created by scripts/setup-dev.sh)
+.venv/
+.uv-cache/
+
+# Temporary directories created by the unit tests inside the project root
+tmp*/
+
+# Local scratch
+_to_delete/

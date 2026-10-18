@@ -1,0 +1,5 @@
+[Desktop Entry]
+Type=Application
+Name=Sample NotShow
+NotShowIn=KDE;
+DBusActivatable=true

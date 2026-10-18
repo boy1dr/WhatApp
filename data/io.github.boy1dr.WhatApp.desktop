@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Version=1.5
+Name=WhatApp
+GenericName=Launcher Inspector
+Comment=Find out what that application actually is
+# @EXEC@ is replaced by scripts/install-user.sh with the full path to the whatapp command.
+Exec=@EXEC@ --gui
+TryExec=@EXEC@
+Icon=io.github.boy1dr.WhatApp
+Terminal=false
+Categories=System;Utility;
+Keywords=launcher;desktop;application;inspect;dpkg;xdg;
+StartupNotify=true

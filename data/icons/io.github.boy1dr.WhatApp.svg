@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- WhatApp application icon. Original artwork, MIT licensed with the project. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3b6fd6"/>
+      <stop offset="1" stop-color="#244a9c"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0.15"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Rounded tile background -->
+  <rect x="8" y="8" width="112" height="112" rx="26" fill="url(#bg)"/>
+  <rect x="8" y="8" width="112" height="56" rx="26" fill="#ffffff" opacity="0.08"/>
+
+  <!-- Grid of launcher tiles -->
+  <g fill="#ffffff" opacity="0.92">
+    <rect x="26" y="26" width="24" height="24" rx="6"/>
+    <rect x="58" y="26" width="24" height="24" rx="6"/>
+    <rect x="26" y="58" width="24" height="24" rx="6"/>
+  </g>
+  <!-- One tile is uncertain: dashed outline with a question mark -->
+  <rect x="58" y="58" width="24" height="24" rx="6" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-dasharray="4 3" opacity="0.9"/>
+  <text x="70" y="76.5" font-family="DejaVu Sans, Cantarell, sans-serif" font-size="17" font-weight="bold" text-anchor="middle" fill="#ffffff">?</text>
+
+  <!-- Magnifying glass over the uncertain tile -->
+  <g>
+    <line x1="88" y1="88" x2="106" y2="106" stroke="#1c3570" stroke-width="12" stroke-linecap="round"/>
+    <line x1="88" y1="88" x2="106" y2="106" stroke="#f4b942" stroke-width="7" stroke-linecap="round"/>
+    <circle cx="74" cy="74" r="20" fill="url(#glass)" stroke="#1c3570" stroke-width="9"/>
+    <circle cx="74" cy="74" r="20" fill="none" stroke="#f4b942" stroke-width="5"/>
+  </g>
+</svg>
